@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge" />
+	<title>winline_320x480_scratch</title>
+	<style>
+		html {
+			height:100%;
+		}
+		body {
+			background-color:#FFF;
+			margin:0;
+			height:100%;
+		}
+	</style>
+	<!-- copy these lines to your document head: -->
+
+	<meta name="viewport" content="user-scalable=yes, width=320" />
+	<script type="text/javascript" src="winline_320x480_scratch.hyperesources/scratch.min.js"></script>
+	
+	<script src="winline_320x480_scratch.hyperesources/scratch.min.js"></script> 
+	
+	<script>
+	
+	window.click = function() {
+		window.open("","_blank");
+	}
+	
+	//switch scenes on completion
+	//1 means yes 0 means no
+	var SwitchScenes = 1;
+	
+	
+	
+	
+	//-------ignore------\\
+	var itsLoaded=0
+	function myCallback(hypeDocument, element, event) {
+		window.myhypedocument = hypeDocument;
+		itsLoaded=1
+		myDoc=hypeDocument  
+	}
+	function callback(d) {
+		if(itsLoaded!=0){ 
+			if(SwitchScenes==1){
+			myDoc.showNextScene(myDoc.kSceneTransitionInstant, 0)
+			}
+		}
+	}
+	if("HYPE_eventListeners" in window === false) {
+		window.HYPE_eventListeners = Array();	
+	}
+	window.HYPE_eventListeners.push({"type":"HypeDocumentLoad", "callback":myCallback});
+	</script>
+ 
+
+	<!-- end copy -->
+  </head>
+  <body>
+	<!-- copy these lines to your document: -->
+
+	<div id="winline320x480scratch_hype_container" class="HYPE_document" style="margin:auto;position:relative;width:320px;height:480px;overflow:hidden;">
+		<script type="text/javascript" charset="utf-8" src="winline_320x480_scratch.hyperesources/winline320x480scratch_hype_generated_script.js?59675"></script>
+	</div>
+
+	<!-- end copy -->
+	
+
+
+	<!-- text content for search engines: -->
+
+	<div style="display:none" aria-hidden=true>
+
+
+	</div>
+
+	<!-- end text content: -->
+
+  </body>
+</html>
